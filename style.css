@@ -1,0 +1,201 @@
+body{
+    background-color: black;
+    color: black;
+    font-family: "heebo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h1{
+    font-size: 40px;
+    font-family: source-code-pro, monospace;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+h2{
+    font-size: 20px;
+    font-family: "heebo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    font-size: 22px;
+    line-height: 24px;
+}
+
+a{
+    color:aliceblue;
+    cursor: pointer;
+}
+  img {
+    max-width:100%;
+    transition: all .2s ease-in-out; 
+    /* max-height: 150%; */
+  }
+  img:hover { 
+    transform: scale(1.05); 
+    margin-top: 5px;
+    }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 10px;
+    height: 100%;
+    grid-template-rows: 15%;
+    width: 100%;
+  }
+  .header{
+    grid-column: col-start 1/ span 5;
+    padding-left: 50px;
+    grid-row: 1;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+  }
+  .headerdetails{
+    grid-column: col-start 8/ span 5;
+    grid-row: 1;
+    line-height: 20px;
+    display: table;
+    text-align: center;
+    margin-top: 10px;
+  }
+.headertext{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: "heebo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-right: 5px;
+    width: max-content;
+    color: white;
+  }
+  .itemtitle{
+    font-size: 4vw;
+    padding-top: 10px;
+    font-family: source-code-pro, monospace;
+font-weight: 700;
+font-style: normal;
+
+}
+.resizingtext {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+.itemtext{
+    padding: 10px;
+    font-weight: 400;
+}
+.card {
+    display: table-cell;
+    min-width: 98%;
+    width: 98%;
+    /* border: 2px solid #d1d1d1; */
+    padding: 5px;
+    margin: 5px;
+    white-space: normal;
+    line-height: 1.1;
+    vertical-align: top;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .item1 {
+    grid-column: col-start 1/ span 5;
+    grid-row: 2/ span 2;
+    /* border: 2px solid aliceblue; */
+    overflow-x: auto;
+    white-space:nowrap;
+    display: flex;
+    overflow-y: hidden;
+    background-color: cyan;
+}
+
+  .item2 {
+    grid-column: col-start 6 / span 7;
+    grid-row: 2 / span 2;
+    /* border: 2px solid aliceblue; */
+    overflow-x: auto;
+    white-space:nowrap;
+    display: flex;
+    overflow-y: hidden;
+    background-color: magenta;
+  }
+  .item3 {
+    grid-column: col-start 1 / span 7;
+    grid-row: 4/ span 2;
+    /* border: 2px solid aliceblue; */
+    overflow-x: auto;
+    white-space:nowrap;
+    display: flex;
+    overflow-y: hidden;
+    background-color: rgb(30, 79, 255);
+  }
+  .item4 {
+    grid-column: col-start 8 / span 5;
+    grid-row: 4 / span 2;
+    /* border: 2px solid aliceblue; */
+    overflow-x: auto;
+    white-space:nowrap;
+    display: flex;
+    overflow-y: hidden;
+    background-color: red;
+  }
+  .item5 {
+    grid-column: col-start 1 / span 6;
+    grid-row: 6 / span 2;
+    /* border: 2px solid aliceblue; */
+    overflow-x: auto;
+    white-space:nowrap;
+    display: flex;
+    overflow-y: hidden;
+    background-color: rgb(6, 226, 6);
+  }
+  .item6 {
+    grid-column: col-start 7 / span 6;
+    grid-row: 6 / span 2;
+    /* border: 2px solid aliceblue; */
+    overflow-x: auto;
+    white-space:nowrap;
+    display: flex;
+    overflow-y: hidden;
+    background-color: yellow;
+  }
+  
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: none; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+
+  @media screen and (max-device-width:700px){
+
+    .itemtitle{
+        font-size:  25px;
+        padding-top: 20px;
+        font-family: source-code-pro, monospace;
+    font-weight: 700;
+    font-style: normal;
+    }
+  }
